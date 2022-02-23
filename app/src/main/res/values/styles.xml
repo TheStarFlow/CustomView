@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LevelProgressView">
+        <attr name="progressBgColor" format="color" />
+        <attr name="android:thickness" format="dimension" />
+        <attr name="android:textColor" format="color" />
+        <attr name="levelTextSize" format="float" />
+        <attr name="currLevelTextSize" format="float" />
+        <attr name="leverColor" format="color" />
+        <attr name="currLevelColor" format="color" />
+        <attr name="levelRadius" format="dimension" />
+        <attr name="currLevelRadius" format="dimension" />
+        <attr name="ringThickness" format="dimension" />
+        <attr name="currLevel" format="integer" />
+        <attr name="android:orientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
