@@ -17,5 +17,11 @@
             <enum name="horizontal" value="1" />
         </attr>
     </declare-styleable>
-
+    <declare-styleable name="BeeLoadingView">
+        <attr name="marginOuter" format="dimension"/>
+        <attr name="marginInner" format="dimension"/>
+        <attr name="currFactor" format="float"/>
+        <attr name="parWidth" format="dimension"/>
+        <attr name="space" format="dimension"/>
+    </declare-styleable>
 </resources>
