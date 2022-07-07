@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/green_00eecb"
+    android:background="@color/white_f0f0f0"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="42dp">
+        <ImageView
+            android:id="@+id/labelICon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/yg_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/im_down"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/labelICon"
+            app:layout_constraintStart_toEndOf="@id/labelICon"
+            app:layout_constraintTop_toTopOf="@id/labelICon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/YG_IME"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/gray_999999"
+            android:id="@+id/label"
+            app:drawableStartCompat="@mipmap/yg_avatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.zzs.keyboard.MyKeyboardView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:id="@+id/sKeyboard"
+        app:background="@null"
+        android:padding="12dp"
+        app:keyBackground="@drawable/key_background"
+        app:keyTextColor="@color/gray_333333"
+        app:keyTextSize="26sp"
+        app:shadowRadius="0"
+        style="@style/KeyboardView"
+       />
+
+</LinearLayout>
